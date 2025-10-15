@@ -1,0 +1,86 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+h2{
+    margin-top: 20px;
+}
+.day {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.weekend {
+    background-color: #dddddd; /* Color de fondo gris para fines de semana */
+}
+
+.blue-day {
+    background-color: #00adc4;
+    color: white;
+}
+.tablaMes {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2em;
+  table-layout: fixed;
+}
+
+.tablaMes th, .tablaMes td {
+  border: 1px solid #ccc;
+  width: 14.28%;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: default;
+  transition: background 0.2s ease;
+}
+
+.tablaMes td.clicable {
+  cursor: pointer;
+}
+
+.tablaMes td.clicable:hover {
+  background-color: #e6f7e6;
+}
+
+.tablaMes td.marcado {
+  background-color: #9be19b !important;
+  font-weight: bold;
+}
+
+.tablaMes td.no-seleccionable {
+  background-color: #f2f2f2;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.tablaMes td.fueraMes {
+  background-color: #fafafa;
+  color: #ccc;
+}
+
+.controlesMes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.calendarioHijo {
+  margin-bottom: 3em;
+}
+
+.tituloMes {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+

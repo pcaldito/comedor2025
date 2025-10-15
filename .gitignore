@@ -1,0 +1,6 @@
+/vendor
+config.php
+README.md
+.htaccess
+composer.json
+composer.lock
