@@ -448,11 +448,12 @@
          */
         public static function modificarPersona($datos) {
             $sql = 'UPDATE Persona';
-            $sql .= ' SET nombre=:nombre, apellidos=:apellidos, correo=:correo, telefono=:telefono WHERE id=:id';
+            $sql .= ' SET nombre=:nombre, apellidos=:apellidos, correo=:correo, iban=:iban, telefono=:telefono WHERE id=:id';
             $params = array(
                 'nombre' => $datos->nombre,
                 'apellidos' => $datos->apellidos,
                 'correo' => $datos->correo,
+                'iban' => $datos->iban,
                 'telefono' => $datos->telefono,
                 'id' => $datos->id
             );

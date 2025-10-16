@@ -69,7 +69,7 @@ export class VistaInicioPadres extends Vista {
         contenedorBotones.classList.add('controlesMes');
 
         const botonMesAnterior = document.createElement('button');
-        botonMesAnterior.textContent = '← Mes anterior';
+        botonMesAnterior.textContent = 'Mes anterior';
         botonMesAnterior.addEventListener('click', this.mesAnterior.bind(this));
 
         const tituloMes = document.createElement('span');
@@ -77,7 +77,7 @@ export class VistaInicioPadres extends Vista {
         tituloMes.textContent = `${this.listaMeses[this.mes]} ${this.anio}`;
 
         const botonMesSiguiente = document.createElement('button');
-        botonMesSiguiente.textContent = 'Mes siguiente →';
+        botonMesSiguiente.textContent = 'Mes siguiente';
         botonMesSiguiente.addEventListener('click', this.mesSiguiente.bind(this));
 
         contenedorBotones.appendChild(botonMesAnterior);

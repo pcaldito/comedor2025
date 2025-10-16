@@ -35,6 +35,7 @@ export class VistaModificarPadres extends Vista {
         this.inputs[1].value = datos.apellidos;
         this.inputs[2].value = datos.telefono;
         this.inputs[3].value = datos.correo;
+        this.inputs[4].value = datos.iban;
         this.idUsuario = datos.id;
     }
 
@@ -120,7 +121,8 @@ export class VistaModificarPadres extends Vista {
                 'nombre': this.inputs[0].value,
                 'apellidos': this.inputs[1].value,
                 'telefono': this.inputs[2].value,
-                'correo': this.inputs[3].value
+                'correo': this.inputs[3].value,
+                'iban': this.inputs[4].value
             };
 
             this.btnActualizar.disabled = true;

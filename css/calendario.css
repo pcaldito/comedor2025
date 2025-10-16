@@ -84,3 +84,27 @@ h2{
   font-size: 1.3em;
 }
 
+.tablaMes td button {
+  display: inline-flex;             /* mejor control de alineación interna */
+  align-items: center;
+  justify-content: center;
+  width: 85%;                       /* se adapta al ancho de la celda */
+  min-width: 60px;                  /* evita que se encoja demasiado */
+  height: 28px;                     /* alto consistente */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(9px, 1vw, 11px); /* adapta tamaño al espacio disponible */
+  line-height: 1;
+  padding: 0 0.5rem;
+  white-space: normal;              /* permite salto si no cabe */
+  text-align: center;
+  word-break: break-word;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tablaMes td button:hover {
+  background-color: #0069d9;
+}
